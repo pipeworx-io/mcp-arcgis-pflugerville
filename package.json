@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-pflugerville",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "City of Pflugerville GIS — Pflugerville, Texas open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-7706a66d9822389681e9ebb82c3b238c7a8b1b23b53a1016039668790c3f7560",
-    "sourceCommit": "54bf7d1c06a0775508a65d0c388dd10ba75174c3"
+    "sourceHash": "v1-64f5bed2f11c7c3d08a3d81d872aff1a3481ac0902e441629d936e6461d6baf0",
+    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
   }
 }
