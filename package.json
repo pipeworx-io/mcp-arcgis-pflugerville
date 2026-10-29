@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-pflugerville",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "City of Pflugerville GIS — Pflugerville, Texas open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-pflugerville": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-pflugerville"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-pflugerville.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-pflugerville",
   "pipeworx": {
-    "sourceHash": "v1-64f5bed2f11c7c3d08a3d81d872aff1a3481ac0902e441629d936e6461d6baf0",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "arcgis-pflugerville",
+    "gatewaySlug": "arcgis-pflugerville",
+    "sourceHash": "v1-051e4ce2ce95e0cc41c640d696f8af55c184c5eb05daa0c550600727cb0dbe4b",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
